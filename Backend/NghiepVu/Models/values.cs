@@ -15,58 +15,6 @@ using System.Text.RegularExpressions;
 
 public class Utils
 {
-    public static class TrangThaiBieuMau
-    {
-        public const string ChuaKiemTra = "ChuaKiemTra";
-        public const string DaKiemTra = "DaKiemTra";
-        public const string ChuaCongBo = "ChuaCongBo";
-        public const string DaCongBo = "DaCongBo";
-    }
-
-    public static class LoaiLuuVucSong
-    {
-        public const string Lientinh = "lientinh";
-        public const string Noitinh = "noitinh";
-        public const string Noitinhdoclap = "noitinhdoclap";
-    }
-
-    public static class LoaiDiaDiem
-    {
-        public const string TaiLVSLT = "TaiLVSLT";
-        public const string TaiLVSNT = "TaiLVSNT";
-        public const string Tram = "Tram";
-        public const string ViTriChayVao = "ViTriChayVao";
-        public const string ViTriChayRa = "ViTriChayRa";
-        public const string ViTri = "ViTri";
-    }
-
-    public static class BieuMaus
-    {
-        public const string BieuMauSo1 = "BieuMauSo1";
-        public const string BieuMauSo2 = "BieuMauSo2";
-        public const string BieuMauSo3 = "BieuMauSo3";
-        public const string BieuMauSo4 = "BieuMauSo4";
-        public const string BieuMauSo5 = "BieuMauSo5";
-        public const string BieuMauSo6 = "BieuMauSo6";
-        public const string BieuMauSo7 = "BieuMauSo7";
-        public const string BieuMauSo8 = "BieuMauSo8";
-        public const string BieuMauSo9 = "BieuMauSo9";
-        public const string BieuMauSo10 = "BieuMauSo10";
-        public const string BieuMauSo11 = "BieuMauSo11";
-        public const string BieuMauSo12 = "BieuMauSo12";
-        public const string BieuMauSo13 = "BieuMauSo13";
-        public const string BieuMauSo14 = "BieuMauSo14";
-        public const string BieuMauSo15 = "BieuMauSo15";
-        public const string BieuMauSo17 = "BieuMauSo17";
-        public const string BieuMauSo18 = "BieuMauSo18";
-        public const string BieuMauSo19 = "BieuMauSo19";
-        public const string BieuMauSo20 = "BieuMauSo20";
-        public const string BieuMauSo21 = "BieuMauSo21";
-        public const string BieuMauSo22 = "BieuMauSo22";
-        public const string BieuMauSo23 = "BieuMauSo23";
-        public const string BieuMauSo24 = "BieuMauSo24";
-        public const string BieuMauSo25 = "BieuMauSo25";
-    }
 
     public static class TypeOfUsers
     {
@@ -95,11 +43,6 @@ public class Utils
             return null;
         }
         // TODO more validate
-
-        if (tinhThanhId == null || !DanhMucs.DvhcVNDB.Dvhcmap.ContainsKey(tinhThanhId))
-        {
-            return null;
-        }
 
         return new NguoiDungView()
         {
@@ -255,65 +198,6 @@ public class Utils
         return user;
     }
 
-    public static Dictionary<int, bool> BieuMauSoCuaTinhs = new() {
-        { 2, true },
-        { 3, true },
-        { 5, true },
-        { 6, true },
-        { 10, true },
-        { 12, true },
-        { 15, true },
-        { 16, true },
-        { 17, true },
-        { 18, true },
-        { 21, true },
-        { 22, true },
-        { 23, true },
-        { 24, true },
-    };
-
-    public static Dictionary<int, bool> BieuMauTongHops = new()
-    {
-        { 1, true },
-        { 2, true },
-        { 9, true },
-        { 12, true },
-        { 13, true },
-        { 15, true },
-        { 23, true },
-        { 24, true },
-    };
-
-    public static string? ScopeError(NguoiDungView? user, int bieumauso)
-    {
-        if (user == null || user.Scope == null || user.Role == null)
-        {
-            return $"user_scope_invalid in {bieumauso}, ScopeError";
-        }
-
-        if (user.Role != Consts.UserRoles.Admin && BieuMauTongHops.ContainsKey(bieumauso))
-        {
-            return $"user_scope_invalid in bieu mau tong hop {bieumauso}, ScopeError";
-        }
-
-        if (user.Scope == Consts.Scope.Tw)
-        {
-            return "";
-        }
-        if (user.Scope == Consts.Scope.Tinh && BieuMauSoCuaTinhs.ContainsKey(bieumauso))
-        {
-            return "";
-        }
-        if (user.Scope == Consts.Scope.Dvtt && user.CoQuanThucHienId != null && user.CoQuanThucHienId == DanhMucs.TongCucKhiTuongThuyVan.MaMuc && (bieumauso == 9 || bieumauso == 25))
-        {
-            return "";
-        }
-        if (user.Scope == Consts.Scope.Dvtt && user.CoQuanThucHienId != null && user.CoQuanThucHienId != DanhMucs.TongCucKhiTuongThuyVan.MaMuc && bieumauso != 9 && bieumauso != 25)
-        {
-            return "";
-        }
-        return $"user_scope_invalid in {bieumauso}, ScopeError";
-    }
 
     public static string? ReadError(NguoiDungView user, string? bieumauScope, string? bieumauCreatedBy, string? tinhThanhId, string? coQuanThucHienId)
     {
@@ -514,7 +398,7 @@ public class Utils
             rs.Phone = result.PhoneNumber;
             rs.Email = result.Email;
             rs.TinhThanhId = result.TinhThanhId;
-            rs.TinhThanh = NghiepVuConfig.TinhThanh(rs.TinhThanhId);
+            //rs.TinhThanh = NghiepVuConfig.TinhThanh(rs.TinhThanhId);
             rs.CoQuanThucHienId = result.CoQuanThucHienId;
             rs.Scope = result.Scope;
             rs.Supervisor = result.Supervisor;
@@ -532,46 +416,10 @@ public class Utils
             rs.LuuVucSongNoiTinhIds = result.LuuVucSongNoiTinhIds;
             rs.TinhThanhIds = result.TinhThanhIds;
         }
-
-        if (rs.Scope == Consts.Scope.Dvtt)
-        {
-            var coQuanThucHien = GetCoQuanThucHien(rs.CoQuanThucHienId);
-            if (coQuanThucHien != null)
-            {
-                rs.CoQuanThucHien = coQuanThucHien.TenMuc;
-            }
-        }
-
-        if (rs.Scope == Consts.Scope.Tinh)
-        {
-            rs.CoQuanThucHien = "Sở Tài nguyên và Môi trường " + rs.TinhThanh;
-        }
-
-        if (rs.Scope == Consts.Scope.Tw)
-        {
-            rs.CoQuanThucHien = "Cục Quản lý tài nguyên nước";
-        }
-
         return rs;
     }
 
-    public static DanhMuc? GetCoQuanThucHien(string? id)
-    {
-        if (id is null or "")
-        {
-            return null;
-        }
 
-        foreach (var coquan in DanhMucs.DonViTrucThuocBos)
-        {
-            if (coquan.MaMuc == id)
-            {
-                return coquan;
-            }
-        }
-
-        return null;
-    }
 
     // TODO remove, replace by DateTimeToUnixTimeMilliseconds
     public static long DateTimeToUnixTimeStamp(DateTime dtDateTime) => new DateTimeOffset(dtDateTime).ToUnixTimeSeconds();
@@ -644,292 +492,7 @@ public class Utils
     }
 
 
-    public static DanhMuc DanhMuc_Empty = new DanhMuc() { MaMuc = "", TenMuc = "", MaMuc0 = ""};
-    public static List<DanhMuc> DanhMucs_Empty = [];
-
-    public static List<DanhMuc> FindMucDichSuDungs(List<string>? maMucs, List<string>? tenMucs)
-    {
-        return FindDanhMucs(maMucs, tenMucs, Consts.MucDichSuDungm);
-    }
-
-    public static DanhMuc FindMucDichSuDung(string? maMuc, string? tenMuc)
-    {
-        return FindDanhMuc(maMuc, tenMuc, Consts.MucDichSuDungm);
-    }
-
-    public static DanhMuc FindLoaiCongTrinh(string? maMuc, string? tenMuc)
-    {
-        return FindDanhMuc(maMuc, tenMuc, Consts.LoaiCongTrinhm);
-    }
-
-    public static DanhMuc FindLoaiHinhNuocThai(string? maMuc, string? tenMuc)
-    {
-        return FindDanhMuc(maMuc, tenMuc, Consts.LoaiHinhNuocThaim);
-    }
-
-
-    // require danhmucm inited
-    public static DanhMuc FindDanhMuc(string? maMuc, string? tenMuc, Dictionary<string, DanhMuc> danhmucm)
-    {
-        if (danhmucm is null || danhmucm.Count == 0)
-        {
-            return DanhMuc_Empty;
-        }
-        if (maMuc is not null and not "" && danhmucm.ContainsKey(maMuc))
-        {
-            return danhmucm[maMuc];
-        }
-
-        if (tenMuc is null or "")
-        {
-            return DanhMuc_Empty;
-        }
-
-        if (danhmucm.ContainsKey(tenMuc))
-        {
-            return danhmucm[tenMuc];
-        }
-        if (danhmucm.ContainsKey(tenMuc.Trim().ToLower()))
-        {
-            return danhmucm[tenMuc.Trim().ToLower()];
-        }
-
-        return new DanhMuc() { TenMuc = tenMuc.Trim(), MaMuc = "" };
-    }
-
-    public static List<DanhMuc> FindDanhMucs(List<string>? maMucs, List<string>? tenMucs, Dictionary<string, DanhMuc> danhmucm)
-    {
-        if (danhmucm is null || danhmucm.Count == 0)
-        {
-            return DanhMucs_Empty;
-        }
-
-        if ((maMucs is null || maMucs.Count == 0) && (tenMucs is null || tenMucs.Count == 0))
-        {
-            return DanhMucs_Empty;
-        }
-
-        if (maMucs.Count == tenMucs.Count)
-        {
-            var arr0 = new List<DanhMuc>();
-            for (var i = 0; i < maMucs.Count; i++)
-            {
-                arr0.Add(FindDanhMuc(maMucs[i], tenMucs[i], danhmucm));
-            }
-            return arr0;
-        }
-
-        // tenMucs > maMucs
-        var arr = new List<DanhMuc>();
-        for (var i = 0; i < tenMucs.Count; i++)
-        {
-            arr.Add(FindDanhMuc("", tenMucs[i], danhmucm));
-        }
-
-        return arr;
-    }
-
-    public static string? ToLuuLuongKhaiThacText(string? loaiNguonNuoc, List<string>? mucDichSuDungIds, List<string>? mucDichSuDungs, double? luuLuongKhaiThac)
-    {
-        if (luuLuongKhaiThac is null or 0)
-        {
-            return "";
-        }
-
-        DanhMuc dm = null;
-
-        if (loaiNguonNuoc == "NuocBien")
-        {
-            var isSXCN = false;
-            var idSXCN = "";
-            var isKDDV = false;
-            var idKDDV = "";
-            if (mucDichSuDungIds is not null)
-            {
-                foreach (var mucDichSuDungId in mucDichSuDungIds)
-                {
-                    if (Consts.MucDichSuDungNuocBien.IsSXCongNghiep(mucDichSuDungId))
-                    {
-                        isSXCN = true;
-                        idSXCN = mucDichSuDungId;
-                    }
-                    if (Consts.MucDichSuDungNuocBien.IsKinhDoanhDV(mucDichSuDungId))
-                    {
-                        isKDDV = true;
-                        idKDDV = mucDichSuDungId;
-                    }
-                }
-            }
-
-            // isSXCN > isKDDV > isKhaiThacNuocBienKhac in BieuMauSo1 10.1, 10.2
-            if (isSXCN)
-            {
-                dm = FindMucDichSuDung(idSXCN, "");
-            }
-            else if (isKDDV)
-            {
-                dm = FindMucDichSuDung(idKDDV, "");
-            }
-        }
-
-        if (loaiNguonNuoc is "NuocMat" or "NuocNgam")
-        {
-            var isTuoi = false;
-            var idTuoi = "";
-            var isPhiNongNghiep = false;
-            var idPhiNongNghiep = "";
-            if (mucDichSuDungIds is not null)
-            {
-                foreach (var mucDichSuDungId in mucDichSuDungIds)
-                {
-                    if (Consts.MucDichKhaiThac.IsMucDichTuoi(mucDichSuDungId))
-                    {
-                        isTuoi = true;
-                        idTuoi = mucDichSuDungId;
-                    }
-                    if (Consts.MucDichKhaiThac.IsPhiNongNghiep(mucDichSuDungId))
-                    {
-                        isPhiNongNghiep = true;
-                        idPhiNongNghiep = mucDichSuDungId;
-                    }
-                }
-            }
-
-            // tuoi > phinongnghiep > khac
-            if (isTuoi)
-            {
-                dm = FindMucDichSuDung(idTuoi, "");
-            }
-            else if (isPhiNongNghiep)
-            {
-                dm = FindMucDichSuDung(idPhiNongNghiep, "");
-            }
-        }
-
-        var tenMucDich = "";
-        if (dm is not null)
-        {
-            tenMucDich = dm.TenMuc;
-        }
-        if (tenMucDich is null or "" && mucDichSuDungs != null && mucDichSuDungs.Count > 0)
-        {
-            foreach (var s in mucDichSuDungs)
-            {
-                if (s is not null and not "")
-                {
-                    tenMucDich = s;
-                    break;
-                }
-            }
-        }
-        if (tenMucDich is null or "")
-        {
-            tenMucDich = "Loại khác";
-        }
-
-        return $"{luuLuongKhaiThac} {tenMucDich};";
-    }
-
-    public static double? ExtractNumber(string? str)
-    {
-        if (str is null)
-        {
-            return 0;
-        }
-
-        str = str.Trim().ToLower();
-        if (str is "")
-        {
-            return 0;
-        }
-
-        char[] charArray = str.ToCharArray();
-        var listArr = new List<char[]>();
-
-        var listc = new List<char>();
-        if (IsDigit(charArray[0]))
-        {
-            listc.Add(charArray[0]);
-        }
-        var notPrefix = !IsDigitPrefix(charArray[0]) && !IsDigit(charArray[0]);
-        for (var i = 1; i < charArray.Length; i++)
-        {
-            if (!IsDigit(charArray[i]))
-            {
-                if (listc.Count > 0)
-                {
-                    listArr.Add(listc.ToArray());
-                }
-                listc = new List<char>();
-                notPrefix = !IsDigitPrefix(charArray[i]) && !IsDigit(charArray[i]);
-                continue;
-            }
-            if (notPrefix)
-            {
-                if (IsDigitPrefix(charArray[i]))
-                {
-                    notPrefix = false;
-                }
-                continue;
-            }
-            listc.Add(charArray[i]);
-        }
-        if (listc.Count > 0)
-        {
-            listArr.Add(listc.ToArray());
-        }
-
-        if (listArr.Count == 0)
-        {
-            return 0;
-        }
-
-        // use first number found
-        foreach (var arr in listArr)
-        {
-            var number = ToNumber(arr);
-            if (number is not null && number > 0)
-            {
-                return number;
-            }
-        }
-
-        return 0; // TODO
-    }
-
-    private static double? ToNumber(char[] arr)
-    {
-        if (arr is null || arr.Count() == 0)
-        {
-            return 0;
-        }
-        var foundNumber = false;
-        foreach (var ch in arr)
-        {
-            if (ch >= '0' && ch <= '9')
-            {
-                foundNumber = true;
-                break;
-            }
-        }
-        if (!foundNumber)
-        {
-            return 0;
-        }
-
-        // VN format
-        if (IsNumberVN(arr))
-        {
-            var numberVN = ToNumberVN(arr);
-            if (numberVN is not null && numberVN > 0)
-            {
-                return numberVN;
-            }
-        }
-
-        return ToNumberDefault(arr);
-    }
-
+   
     public static bool IsValidVietnamNumberFormat(char[] arr)
     {
         // Kết hợp mảng ký tự thành chuỗi
@@ -1141,27 +704,6 @@ public class Utils
         return d.Date;
     }
 
-
-    public static string ScopeId(string? scope, string? coQuanThucHienId, string? tinhThanhId)
-    {
-        if (scope is null or "")
-        {
-            return "";
-        }
-
-        if (scope == Consts.Scope.Dvtt && coQuanThucHienId is not null and not "")
-        {
-            return scope + "." + coQuanThucHienId;
-        }
-
-        if (scope == Consts.Scope.Tinh && tinhThanhId is not null and not "")
-        {
-            return scope + "." + tinhThanhId;
-        }
-
-        return scope;
-    }
-
     public static string AcronymNameToId(string name)
     {
         name = name.Trim().ToLower(System.Globalization.CultureInfo.CurrentCulture);
@@ -1174,46 +716,6 @@ public class Utils
     }
 }
 
-public partial class MixID
-{
-    public int Type { get; set; }
-    public string Id { get; set; } // include type
-    public string DiaDiemId { get; set; }
-}
-
-public static class DanhMucs
-{
-    public static DvhcVNDB DvhcVNDB = new();
-
-    public static Dictionary<string, DmKtt> KTTTinhThanhm { get; set; }
-
-    // MaMuc of dvtt require <> all tinhthanh-id
-    public static List<DanhMuc> DonViTrucThuocBos = [
-        new() { MaMuc = "01dvtt", TenMuc = "Trung tâm Giám sát tài nguyên nước và Hỗ trợ phát triển lưu vực sông" },
-        new() { MaMuc = "02dvtt", TenMuc = "Trung tâm Thẩm Định và Kiểm định tài nguyên nước" },
-        new() { MaMuc = "03dvtt", TenMuc = "Trung tâm Thông tin - Kinh tế Tài nguyên nước" },
-        new() { MaMuc = "04dvtt", TenMuc = "Trung tâm Quy hoạch và Điều tra tài nguyên nước quốc gia" },
-        new() { MaMuc = "05dvtt", TenMuc = "Viện Khoa học Tài nguyên nước" },
-        new() { MaMuc = "06dvtt", TenMuc = "Tổng cục Khí tượng Thủy văn" }, // if change index, update DonViTrucThuocBos[5]
-        new() { MaMuc = "c1dvtt", TenMuc = "Trung tâm Công nghệ phần mềm và Nền tảng số" },
-    ];
-    public static DanhMuc TongCucKhiTuongThuyVan = DonViTrucThuocBos[5];
-}
-
-public partial class DanhMuc
-{
-    public int? Id { get; set; } // only LVS
-    public string? MaMuc0 { get; set; } // only LVS
-    public string? MaMuc { get; set; }
-    public string? TenMuc { get; set; }
-    public string? KyHieu { get; set; }
-    public string? MaQuyChuan { get; set; }
-    public string? LuuVucSongLienTinhMa { get; set; }
-
-    // only for CoQuanThucHien
-    public string? CoQuanThucHienId { get; set; }
-    public List<string>? LuuVucSongIds { get; set; }
-}
 
 public partial class DmKtt
 {
@@ -1284,120 +786,12 @@ public partial class Spatial
     public double? y { get; set; }
 }
 
-public partial class DvhcVNs
-{
-    public List<DvhcVN> Records { get; set; }
-}
-
-public partial class DvhcVN
-{
-    // public Int64 Id { get; set; }
-    public string TenDVHC { get; set; }
-    public string TenRutGon { get; set; }
-    public string Ten { get; set; }
-    public string Ma { get; set; } // derived
-    public string MaTinh { get; set; }
-    public string MaHuyen { get; set; }
-    public string MaXa { get; set; }
-    public int Cap { get; set; }
-    public string Geometry { get; set; }
-    public List<DvhcVN> QuanHuyens { get; set; }
-    public List<DvhcVN> PhuongXas { get; set; }
-
-    public DvhcVN CLone() => new()
-    {
-        TenDVHC = this.TenDVHC,
-        Ten = this.Ten,
-        Ma = this.Ma,
-        MaTinh = this.MaTinh,
-        MaHuyen = this.MaHuyen,
-        MaXa = this.MaXa,
-        Cap = this.Cap,
-        Geometry = this.Geometry,
-    };
-}
-
-public partial class DvhcVNDB
-{
-    public Dictionary<string, DvhcVN> Dvhcmap { get; set; }
-    public Dictionary<string, string[]> Indexmap { get; set; }
-    public List<DvhcVN> AllTinhThanhs { get; set; }
-    public List<DvhcVN> AllQuanHuyens { get; set; }
-    public List<DvhcVN> AllPhuongXas { get; set; }
-    public List<DvhcVN> TinhThanhsIncludeQhpx { get; set; } // include quanhuyen, phuongxa
-}
-
-public partial class DashboardDanhMucs
-{
-    public List<DvhcVN>? TinhThanhs { get; set; }
-    public List<DanhMuc>? LoaiCongTrinhs { get; set; }
-    public List<DanhMuc>? MucDichSuDungs { get; set; }
-    public List<DanhMuc>? LoaiHinhNuocThais { get; set; }
-    public List<DanhMuc>? CoQuanThucHiens { get; set; }
-    public DanhMuc? TongCucKhiTuongThuyVan { get; set; }
-}
-
 // TODO merge to Util
 public static class NghiepVuConfig
 {
     public static string? ApiName { get; set; }
     public static string? SpatialUrl { get; set; }
     public static WebApplication app { get; set; }
-
-    public static string FindTinhThanhId(string? tinhThanh)
-    {
-        if (tinhThanh != null && DanhMucs.DvhcVNDB.Dvhcmap.ContainsKey("tinhthanhs#" + tinhThanh))
-        {
-            var tinh = DanhMucs.DvhcVNDB.Dvhcmap["tinhthanhs#" + tinhThanh];
-            return tinh.MaTinh;
-        }
-        return "";
-    }
-
-    public static string FindTinhThanh(string? tinhThanhId)
-    {
-        if (tinhThanhId is not null and not "" && DanhMucs.DvhcVNDB.Dvhcmap.ContainsKey(tinhThanhId))
-        {
-            return DanhMucs.DvhcVNDB.Dvhcmap[tinhThanhId].TenDVHC;
-        }
-        return "";
-    }
-
-    public static string FindQuanHuyenId(string? tinhthanhid, string? quanhuyen)
-    {
-        if (quanhuyen != null && DanhMucs.DvhcVNDB.Dvhcmap.ContainsKey(tinhthanhid + "#" + quanhuyen))
-        {
-            var huyen = DanhMucs.DvhcVNDB.Dvhcmap[tinhthanhid + "#" + quanhuyen];
-            return huyen.MaHuyen;
-        }
-        return "";
-    }
-
-    public static string FindPhuongXaId(string? quanhuyenid, string? phuongxa)
-    {
-        if (phuongxa != null && DanhMucs.DvhcVNDB.Dvhcmap.ContainsKey(quanhuyenid + "#" + phuongxa))
-        {
-            var xa = DanhMucs.DvhcVNDB.Dvhcmap[quanhuyenid + "#" + phuongxa];
-            return xa.MaXa;
-        }
-        return "";
-    }
-
-    public static string TinhThanh(string? tinhThanhId)
-    {
-        if (tinhThanhId == null || tinhThanhId.Length == 0)
-        {
-            return "";
-        }
-
-        if (DanhMucs.DvhcVNDB.Dvhcmap.TryGetValue(tinhThanhId, out var value))
-        {
-            return value.TenDVHC;
-        }
-
-        return "";
-    }
-
 
     private static void ToadoToSpatial(Spatial spatial, double? vn2000x, double? vn2000y, HeQuyChieu? heQuyChieu, string? wgS84)
     {

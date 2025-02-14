@@ -262,10 +262,10 @@ public class AccountController : ControllerBase
                         user.Scope,
                         user.FullName,
                         user.TinhThanhId,
-                        TinhThanh = NghiepVuConfig.TinhThanh(user.TinhThanhId),
+                        //TinhThanh = NghiepVuConfig.TinhThanh(user.TinhThanhId),
                         TypeOfUsers = user.TypeOfUser,
                         user.CoQuanThucHienId,
-                        CoQuanThucHien = Utils.GetCoQuanThucHien(user.CoQuanThucHienId),
+                        //CoQuanThucHien = Utils.GetCoQuanThucHien(user.CoQuanThucHienId),
                     });
                 }
                 else
@@ -1102,89 +1102,5 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region GET api/nghiepvukk/users/getbytinhthanhid/{tinhid} users-list
-    [HttpGet("api/nghiepvukk/users/getbytinhthanhid/{tinhid}")]
-    public IActionResult GetUserByTinhId(string tinhid)
-    {
-        if (tinhid == null)
-        {
-            return this.Unauthorized();
-        }
-        var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
-        if (issuer == null)
-        {
-            return this.Unauthorized();
-        }
-        if (issuer.Error is not null and not "")
-        {
-            return this.StatusCode(400, issuer.Error);
-        }
-
-        var result = this.userManager.GetUsersInRoleAsync(Consts.UserRoles.User).Result.ToList();
-        result = result.Where(x => x.TinhThanhId == tinhid && x.Supervisor == null && x.DaXoa == 0).ToList();
-        return this.Ok(result);
-    }
-    #endregion
-
-    #region GET api/nghiepvukk/users/getbycoquanthuchienid/{coquanid} users-list
-    [HttpGet("api/nghiepvukk/users/getbycoquanthuchienid/{coquanid}")]
-    public IActionResult GetUserByCoQuanThucHienId(string coquanid)
-    {
-        if (coquanid == null)
-        {
-            return this.Unauthorized();
-        }
-        var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
-        if (issuer == null)
-        {
-            return this.Unauthorized();
-        }
-        if (issuer.Error is not null and not "")
-        {
-            return this.StatusCode(400, issuer.Error);
-        }
-        var result = this.userManager.GetUsersInRoleAsync(Consts.UserRoles.User).Result.ToList();
-        result = result.Where(x => x.CoQuanThucHienId == coquanid && x.Supervisor == null && x.DaXoa == 0).ToList();
-        return this.Ok(result);
-    }
-    #endregion
-
-    #region GET api/nghiepvukk/users/getgiamsatbytinhthanhid/{tinhid} users-list
-    [HttpGet("api/nghiepvukk/users/getgiamsatbytinhthanhid/{tinhid}")]
-    public IActionResult GetGiamSatByTinhId(string tinhid)
-    {
-        if (tinhid == null)
-        {
-            return this.Ok(null);
-        }
-
-        var result = this.userManager.GetUsersInRoleAsync(Consts.UserRoles.GiamSat).Result.ToList();
-        result = result.Where(x => x.TinhThanhId == tinhid && x.DaXoa == 0).ToList();
-        return this.Ok(result);
-    }
-    #endregion
-
-    #region GET api/nghiepvukk/users/getgiamsatbycoquanthuchienid/{coquanid} users-list
-    [HttpGet("api/nghiepvukk/users/getgiamsatbycoquanthuchienid/{coquanid}")]
-    public IActionResult GetGiamSatByCoQuanThucHienId(string coquanid)
-    {
-        if (coquanid == null)
-        {
-            return this.Ok(null);
-        }
-        var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
-        if (issuer == null)
-        {
-            return this.Unauthorized();
-        }
-        if (issuer.Error is not null and not "")
-        {
-            return this.StatusCode(400, issuer.Error);
-        }
-        var result = this.userManager.GetUsersInRoleAsync(Consts.UserRoles.GiamSat).Result.ToList();
-        result = result.Where(x => x.CoQuanThucHienId == coquanid && x.DaXoa == 0).ToList();
-        return this.Ok(result);
-    }
-    #endregion
 
 }
