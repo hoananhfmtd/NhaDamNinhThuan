@@ -1,0 +1,916 @@
+{
+  "dm_ktt": [
+    {
+      "id": 8,
+      "cap": 2,
+      "matinh": 12,
+      "tendvhc": "Tỉnh Lai Châu",
+      "do": 103,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "103º0'",
+      "srid": 9205
+    },
+    {
+      "id": 11,
+      "cap": 2,
+      "matinh": 14,
+      "tendvhc": "Tỉnh Sơn La",
+      "do": 104,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "104º0'",
+      "srid": 9206
+    },
+    {
+      "id": 12,
+      "cap": 2,
+      "matinh": 10,
+      "tendvhc": "Tỉnh Lào Cai",
+      "do": 104,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "104º45'",
+      "srid": 9208
+    },
+    {
+      "id": 13,
+      "cap": 2,
+      "matinh": 15,
+      "tendvhc": "Tỉnh Yên Bái",
+      "do": 104,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "104º45'",
+      "srid": 9208
+    },
+    {
+      "id": 14,
+      "cap": 2,
+      "matinh": "02",
+      "tendvhc": "Tỉnh Hà Giang",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 15,
+      "cap": 2,
+      "matinh": "08",
+      "tendvhc": "Tỉnh Tuyên Quang",
+      "do": 106,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "106º0'",
+      "srid": 9211
+    },
+    {
+      "id": 16,
+      "cap": 2,
+      "matinh": 25,
+      "tendvhc": "Tỉnh Phú Thọ",
+      "do": 104,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "104º45'",
+      "srid": 9208
+    },
+    {
+      "id": 17,
+      "cap": 2,
+      "matinh": 26,
+      "tendvhc": "Tỉnh Vĩnh Phúc",
+      "do": 105,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "105º0'",
+      "srid": 5897
+    },
+    {
+      "id": 18,
+      "cap": 2,
+      "matinh": "04",
+      "tendvhc": "Tỉnh Cao Bằng",
+      "do": 105,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "105º45'",
+      "srid": 9210
+    },
+    {
+      "id": 23,
+      "cap": 2,
+      "matinh": 27,
+      "tendvhc": "Tỉnh Bắc Ninh",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 26,
+      "cap": 2,
+      "matinh": 30,
+      "tendvhc": "Tỉnh Hải Dương",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 28,
+      "cap": 2,
+      "matinh": "01",
+      "tendvhc": "Thành phố Hà Nội",
+      "do": 105,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "105º0'",
+      "srid": 5897
+    },
+    {
+      "id": 29,
+      "cap": 2,
+      "matinh": 17,
+      "tendvhc": "Tỉnh Hoà Bình",
+      "do": 106,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "106º0'",
+      "srid": 9211
+    },
+    {
+      "id": 30,
+      "cap": 2,
+      "matinh": 49,
+      "tendvhc": "Tỉnh Quảng Nam",
+      "do": 107,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "107º45'",
+      "srid": 5899
+    },
+    {
+      "id": 31,
+      "cap": 2,
+      "matinh": 51,
+      "tendvhc": "Tỉnh Quảng Ngãi",
+      "do": 108,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "108º0'",
+      "srid": 5898
+    },
+    {
+      "id": 32,
+      "cap": 2,
+      "matinh": 52,
+      "tendvhc": "Tỉnh Bình Định",
+      "do": 108,
+      "phut": 15,
+      "daxoa": 0,
+      "ten": "108º15'",
+      "srid": 9217
+    },
+    {
+      "id": 33,
+      "cap": 2,
+      "matinh": 62,
+      "tendvhc": "Tỉnh Kon Tum",
+      "do": 107,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "107º30'",
+      "srid": 9216
+    },
+    {
+      "id": 34,
+      "cap": 2,
+      "matinh": 64,
+      "tendvhc": "Tỉnh Gia Lai",
+      "do": 108,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "108º30'",
+      "srid": 9218
+    },
+    {
+      "id": 35,
+      "cap": 2,
+      "matinh": 66,
+      "tendvhc": "Tỉnh Đắk Lắk",
+      "do": 108,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "108º30'",
+      "srid": 9218
+    },
+    {
+      "id": 36,
+      "cap": 2,
+      "matinh": 67,
+      "tendvhc": "Tỉnh Đắk Nông",
+      "do": 108,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "108º30'",
+      "srid": 9218
+    },
+    {
+      "id": 38,
+      "cap": 2,
+      "matinh": 56,
+      "tendvhc": "Tỉnh Khánh Hòa",
+      "do": 108,
+      "phut": 15,
+      "daxoa": 0,
+      "ten": "108º15'",
+      "srid": 9217
+    },
+    {
+      "id": 41,
+      "cap": 2,
+      "matinh": 68,
+      "tendvhc": "Tỉnh Lâm Đồng",
+      "do": 107,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "107º45'",
+      "srid": 5899
+    },
+    {
+      "id": 42,
+      "cap": 2,
+      "matinh": 74,
+      "tendvhc": "Tỉnh Bình Dương",
+      "do": 105,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "105º45'",
+      "srid": 9210
+    },
+    {
+      "id": 43,
+      "cap": 2,
+      "matinh": 70,
+      "tendvhc": "Tỉnh Bình Phước",
+      "do": 106,
+      "phut": 15,
+      "daxoa": 0,
+      "ten": "106º15'",
+      "srid": 9212
+    },
+    {
+      "id": 44,
+      "cap": 2,
+      "matinh": 75,
+      "tendvhc": "Tỉnh Đồng Nai",
+      "do": 107,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "107º45'",
+      "srid": 5899
+    },
+    {
+      "id": 45,
+      "cap": 2,
+      "matinh": 77,
+      "tendvhc": "Tỉnh Bà Rịa - Vũng Tàu",
+      "do": 107,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "107º45'",
+      "srid": 5899
+    },
+    {
+      "id": 46,
+      "cap": 2,
+      "matinh": 72,
+      "tendvhc": "Tỉnh Tây Ninh",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 48,
+      "cap": 2,
+      "matinh": 82,
+      "tendvhc": "Tỉnh Tiền Giang",
+      "do": 105,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "105º45'",
+      "srid": 9210
+    },
+    {
+      "id": 49,
+      "cap": 2,
+      "matinh": 83,
+      "tendvhc": "Tỉnh Bến Tre",
+      "do": 105,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "105º45'",
+      "srid": 9210
+    },
+    {
+      "id": 50,
+      "cap": 2,
+      "matinh": 87,
+      "tendvhc": "Tỉnh Đồng Tháp",
+      "do": 105,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "105º0'",
+      "srid": 5897
+    },
+    {
+      "id": 51,
+      "cap": 2,
+      "matinh": 35,
+      "tendvhc": "Tỉnh Hà Nam",
+      "do": 105,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "105º0'",
+      "srid": 5897
+    },
+    {
+      "id": 52,
+      "cap": 2,
+      "matinh": 36,
+      "tendvhc": "Tỉnh Nam Định",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 53,
+      "cap": 2,
+      "matinh": 34,
+      "tendvhc": "Tỉnh Thái Bình",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 54,
+      "cap": 2,
+      "matinh": 37,
+      "tendvhc": "Tỉnh Ninh Bình",
+      "do": 105,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "105º0'",
+      "srid": 5897
+    },
+    {
+      "id": 55,
+      "cap": 2,
+      "matinh": 38,
+      "tendvhc": "Tỉnh Thanh Hóa",
+      "do": 105,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "105º0'",
+      "srid": "5897"
+    },
+    {
+      "id": 57,
+      "cap": 2,
+      "matinh": 42,
+      "tendvhc": "Tỉnh Hà Tĩnh",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 58,
+      "cap": 2,
+      "matinh": 44,
+      "tendvhc": "Tỉnh Quảng Bình",
+      "do": 106,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "106º0'",
+      "srid": 9211
+    },
+    {
+      "id": 59,
+      "cap": 2,
+      "matinh": 45,
+      "tendvhc": "Tỉnh Quảng Trị",
+      "do": 106,
+      "phut": 15,
+      "daxoa": 0,
+      "ten": "106º15'",
+      "srid": 9212
+    },
+    {
+      "id": 60,
+      "cap": 2,
+      "matinh": 46,
+      "tendvhc": "Tỉnh Thừa Thiên Huế",
+      "do": 107,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "107º0'",
+      "srid": 9214
+    },
+    {
+      "id": 61,
+      "cap": 2,
+      "matinh": 48,
+      "tendvhc": "Thành phố Đà Nẵng",
+      "do": 107,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "107º45'",
+      "srid": 5899
+    },
+    {
+      "id": 62,
+      "cap": 2,
+      "matinh": 86,
+      "tendvhc": "Tỉnh Vĩnh Long",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 63,
+      "cap": 2,
+      "matinh": 84,
+      "tendvhc": "Tỉnh Trà Vinh",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 64,
+      "cap": 2,
+      "matinh": 89,
+      "tendvhc": "Tỉnh An Giang",
+      "do": 104,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "104º45'",
+      "srid": 9208
+    },
+    {
+      "id": 65,
+      "cap": 2,
+      "matinh": 91,
+      "tendvhc": "Tỉnh Kiên Giang",
+      "do": 104,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "104º30'",
+      "srid": 9207
+    },
+    {
+      "id": 66,
+      "cap": 2,
+      "matinh": 92,
+      "tendvhc": "Thành phố Cần Thơ",
+      "do": 105,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "105º0'",
+      "srid": 5897
+    },
+    {
+      "id": 67,
+      "cap": 2,
+      "matinh": 93,
+      "tendvhc": "Tỉnh Hậu Giang",
+      "do": 104,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "104º30'",
+      "srid": 9207
+    },
+    {
+      "id": 68,
+      "cap": 2,
+      "matinh": 94,
+      "tendvhc": "Tỉnh Sóc Trăng",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 69,
+      "cap": 2,
+      "matinh": 95,
+      "tendvhc": "Tỉnh Bạc Liêu",
+      "do": 105,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "105º0'",
+      "srid": 5897
+    },
+    {
+      "id": 70,
+      "cap": 2,
+      "matinh": 96,
+      "tendvhc": "Tỉnh Cà Mau",
+      "do": 104,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "104º30'",
+      "srid": 9207
+    },
+    {
+      "id": 71,
+      "cap": 2,
+      "matinh": 79,
+      "tendvhc": "Thành phố Hồ Chí Minh",
+      "do": 105,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "105º45'",
+      "srid": 9210
+    },
+    {
+      "id": 73,
+      "cap": 1,
+      "matinh": "",
+      "tendvhc": "",
+      "do": 106,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "106º0'",
+      "srid": 9211
+    },
+    {
+      "id": 74,
+      "cap": 1,
+      "matinh": "",
+      "tendvhc": "",
+      "do": 107,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "107º0'",
+      "srid": 0
+    },
+    {
+      "id": 75,
+      "cap": 1,
+      "matinh": "",
+      "tendvhc": "",
+      "do": 108,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "108º0'",
+      "srid": 0
+    },
+    {
+      "id": 9,
+      "cap": 2,
+      "matinh": 11,
+      "tendvhc": "Tỉnh Điện Biên",
+      "do": 103,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "103º0'",
+      "srid": 9205
+    },
+    {
+      "id": 22,
+      "cap": 2,
+      "matinh": 24,
+      "tendvhc": "Tỉnh Bắc Giang",
+      "do": 107,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "107º0'",
+      "srid": 9214
+    },
+    {
+      "id": 27,
+      "cap": 2,
+      "matinh": 33,
+      "tendvhc": "Tỉnh Hưng Yên",
+      "do": 105,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "105º30'",
+      "srid": 9209
+    },
+    {
+      "id": 37,
+      "cap": 2,
+      "matinh": 54,
+      "tendvhc": "Tỉnh Phú Yên",
+      "do": 108,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "108º30'",
+      "srid": 9218
+    },
+    {
+      "id": 39,
+      "cap": 2,
+      "matinh": 58,
+      "tendvhc": "Tỉnh Ninh Thuận",
+      "do": 108,
+      "phut": 15,
+      "daxoa": 0,
+      "ten": "108º15'",
+      "srid": 9217
+    },
+    {
+      "id": 40,
+      "cap": 2,
+      "matinh": 60,
+      "tendvhc": "Tỉnh Bình Thuận",
+      "do": 108,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "108º30'",
+      "srid": 9218
+    },
+    {
+      "id": 47,
+      "cap": 2,
+      "matinh": 80,
+      "tendvhc": "Tỉnh Long An",
+      "do": 105,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "105º45'",
+      "srid": 9210
+    },
+    {
+      "id": 56,
+      "cap": 2,
+      "matinh": 40,
+      "tendvhc": "Tỉnh Nghệ An",
+      "do": 104,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "104º45'",
+      "srid": 9208
+    },
+    {
+      "id": 24,
+      "cap": 2,
+      "matinh": 22,
+      "tendvhc": "Tỉnh Quảng Ninh",
+      "do": 107,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "107º45'",
+      "srid": 5899
+    },
+    {
+      "id": 19,
+      "cap": 2,
+      "matinh": 20,
+      "tendvhc": "Tỉnh Lạng Sơn",
+      "do": 107,
+      "phut": 15,
+      "daxoa": 0,
+      "ten": "107º15'",
+      "srid": 9215
+    },
+    {
+      "id": 20,
+      "cap": 2,
+      "matinh": "06",
+      "tendvhc": "Tỉnh Bắc Kạn",
+      "do": 106,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "106º30'",
+      "srid": 9213
+    },
+    {
+      "id": 21,
+      "cap": 2,
+      "matinh": 19,
+      "tendvhc": "Tỉnh Thái Nguyên",
+      "do": 106,
+      "phut": 30,
+      "daxoa": 0,
+      "ten": "106º30'",
+      "srid": 9213
+    },
+    {
+      "id": 25,
+      "cap": 2,
+      "matinh": 31,
+      "tendvhc": "Thành phố Hải Phòng",
+      "do": 105,
+      "phut": 45,
+      "daxoa": 0,
+      "ten": "105º45'",
+      "srid": 9210
+    },
+    {
+      "id": 72,
+      "cap": 1,
+      "matinh": "",
+      "tendvhc": "",
+      "do": 105,
+      "phut": 0,
+      "daxoa": 0,
+      "ten": "105º0'",
+      "srid": 3405
+    }
+  ],
+  "spatial_ref_sys": [
+    {
+      "srid": 4326,
+      "auth_name": "EPSG",
+      "auth_srid": 4326,
+      "srtext": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj4text": "+proj=longlat +datum=WGS84 +no_defs"
+    },
+    {
+      "srid": 3857,
+      "auth_name": "EPSG",
+      "auth_srid": 3857,
+      "srtext": "PROJCS[\"WGS 84 / Pseudo-Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_1SP\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"X\",EAST],AXIS[\"Y\",NORTH],EXTENSION[\"PROJ4\",\"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs\"],AUTHORITY[\"EPSG\",\"3857\"]]",
+      "proj4text": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"
+    },
+    {
+      "srid": 900913,
+      "auth_name": "EPSG",
+      "auth_srid": 900913,
+      "srtext": "PROJCS[\"Popular Visualisation CRS / Mercator (deprecated)\",GEOGCS[\"Popular Visualisation CRS\",DATUM[\"Popular_Visualisation_Datum\",SPHEROID[\"Popular Visualisation Sphere\",6378137,0,AUTHORITY[\"EPSG\",\"7059\"]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[\"EPSG\",\"6055\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.01745329251994328,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4055\"]],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],PROJECTION[\"Mercator_1SP\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],AUTHORITY[\"EPSG\",\"3785\"],AXIS[\"X\",EAST],AXIS[\"Y\",NORTH]]",
+      "proj4text": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs"
+    },
+    {
+      "srid": 9205,
+      "auth_name": "EPSG",
+      "auth_srid": 9205,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 103-00\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",103],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9205\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=103 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9206,
+      "auth_name": "EPSG",
+      "auth_srid": 9206,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 104-00\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",104],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9206\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=104 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9207,
+      "auth_name": "EPSG",
+      "auth_srid": 9207,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 104-30\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",104.5],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9207\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=104.5 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9208,
+      "auth_name": "EPSG",
+      "auth_srid": 9208,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 104-45\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",104.75],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9208\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=104.75 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9209,
+      "auth_name": "EPSG",
+      "auth_srid": 9209,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 105-30\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",105.5],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9209\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=105.5 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9210,
+      "auth_name": "EPSG",
+      "auth_srid": 9210,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 105-45\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",105.75],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9210\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=105.75 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9211,
+      "auth_name": "EPSG",
+      "auth_srid": 9211,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 106-00\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",106],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9211\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=106 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9212,
+      "auth_name": "EPSG",
+      "auth_srid": 9212,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 106-15\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",106.25],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9212\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=106.25 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9213,
+      "auth_name": "EPSG",
+      "auth_srid": 9213,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 106-30\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",106.5],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9213\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=106.5 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9214,
+      "auth_name": "EPSG",
+      "auth_srid": 9214,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 107-00\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",107],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9214\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=107 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9215,
+      "auth_name": "EPSG",
+      "auth_srid": 9215,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 107-15\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",107.25],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9215\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=107.25 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9216,
+      "auth_name": "EPSG",
+      "auth_srid": 9216,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 107-30\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",107.5],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9216\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=107.5 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9217,
+      "auth_name": "EPSG",
+      "auth_srid": 9217,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 108-15\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",108.25],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9217\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=108.25 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 9218,
+      "auth_name": "EPSG",
+      "auth_srid": 9218,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 108-30\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",108.5],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"9218\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=108.5 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,-0.00928836,0.01975479,-0.00427372,0.252906278 +units=m +no_defs +type=crs"
+    },
+    {
+      "srid": 5896,
+      "auth_name": "EPSG",
+      "auth_srid": 5896,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 zone 481\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],TOWGS84[-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278],AUTHORITY[\"EPSG\",\"6756\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",102],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"5896\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=102 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278 +units=m +no_defs"
+    },
+    {
+      "srid": 5897,
+      "auth_name": "EPSG",
+      "auth_srid": 5897,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 zone 482\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],TOWGS84[-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278],AUTHORITY[\"EPSG\",\"6756\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",105],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"5897\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=105 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278 +units=m +no_defs"
+    },
+    {
+      "srid": 5898,
+      "auth_name": "EPSG",
+      "auth_srid": 5898,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 zone 491\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],TOWGS84[-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278],AUTHORITY[\"EPSG\",\"6756\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",108],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"5898\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=108 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278 +units=m +no_defs"
+    },
+    {
+      "srid": 5899,
+      "auth_name": "EPSG",
+      "auth_srid": 5899,
+      "srtext": "PROJCS[\"VN-2000 / TM-3 Da Nang zone\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],TOWGS84[-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278],AUTHORITY[\"EPSG\",\"6756\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",107.75],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"5899\"]]",
+      "proj4text": "+proj=tmerc +lat_0=0 +lon_0=107.75 +k=0.9999 +x_0=500000 +y_0=0 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278 +units=m +no_defs"
+    },
+    {
+      "srid": 4756,
+      "auth_name": "EPSG",
+      "auth_srid": 4756,
+      "srtext": "GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],TOWGS84[-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278],AUTHORITY[\"EPSG\",\"6756\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]]",
+      "proj4text": "+proj=longlat +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278 +no_defs"
+    },
+    {
+      "srid": 3405,
+      "auth_name": "EPSG",
+      "auth_srid": 3405,
+      "srtext": "PROJCS[\"VN-2000 / UTM zone 48N\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],TOWGS84[-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278],AUTHORITY[\"EPSG\",\"6756\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",105],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3405\"]]",
+      "proj4text": "+proj=utm +zone=48 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278 +units=m +no_defs"
+    },
+    {
+      "srid": 3406,
+      "auth_name": "EPSG",
+      "auth_srid": 3406,
+      "srtext": "PROJCS[\"VN-2000 / UTM zone 49N\",GEOGCS[\"VN-2000\",DATUM[\"Vietnam_2000\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],TOWGS84[-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278],AUTHORITY[\"EPSG\",\"6756\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4756\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",111],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3406\"]]",
+      "proj4text": "+proj=utm +zone=49 +ellps=WGS84 +towgs84=-191.90441429,-39.30318279,-111.45032835,0.00928836,-0.01975479,0.00427372,0.252906278 +units=m +no_defs"
+    }
+  ],
+  "out_epsg": [
+    {
+      "srid":3405 
+    }
+  ]
+}

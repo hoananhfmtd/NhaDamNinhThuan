@@ -1,0 +1,70 @@
+@import 'sweetalert2/src/sweetalert2.scss';
+
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    // overflow: overlay !important;
+    // ::-webkit-scrollbar {
+    //     width: 8px;
+    //     height: 8px;
+    // }
+    // ::-webkit-scrollbar-track {
+    //     background: transparent;
+    // }
+    // ::-webkit-scrollbar-thumb {
+    //     background: #bae6fd;
+    //     cursor: pointer;
+    //     border-radius: 8px;
+    // }
+    // ::-webkit-scrollbar-thumb:hover {
+    //     background: #67e8f9;
+    // }
+}
+.main-layout .MuiDrawer-paper {
+    width: 353px;
+    background-color: #fefeff;
+    border: none;
+}
+.modal {
+    z-index: 1300;
+}
+.text_a {
+    cursor: pointer;
+    color: #1890ff;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    transition: color 0.3s;
+    text-decoration: underline;
+    -webkit-text-decoration-skip: objects;
+}
+.ag-grid-header-center .ag-header-cell-label {
+    justify-content: center;
+    text-align: center;
+}
+.ag-theme-alpine {
+    /* disable all borders */
+    --ag-borders: none;
+    /* then add back a border between rows */
+    // --ag-row-border-style: solid;
+    // --ag-row-border-width: 1px;
+    // --ag-row-border-color: #ccc;
+    .ag-center-cols-viewport,
+    .ag-center-cols-container {
+        min-height: 50px !important;
+    }
+}
+.swal2-container {
+    z-index: 99999999999;
+}

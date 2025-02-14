@@ -1,0 +1,312 @@
+/* Table */
+.hq_table {
+    border-collapse: collapse;
+    position: relative;
+    margin: 0 10px;
+}
+.hq_table,
+.hq_table th,
+.hq_table td {
+    border: 1px solid #ccc !important;
+    height: auto;
+    border-top: none;
+    position: relative;
+    z-index: 1100;
+}
+.hq_table th {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    user-select: none;
+    cursor: cell;
+    position: relative;
+    z-index: 1100;
+}
+.hq_table td {
+    font-size: 14px;
+    vertical-align: middle;
+    text-decoration: inherit;
+    min-height: 36px;
+}
+
+.hq_table > tbody > tr:hover {
+    background: #e8efff !important;
+}
+.hq_table > col:hover {
+    background: #e8efff !important;
+}
+/* styling input table */
+.hq_table input::placeholder,
+textarea::placeholder {
+    color: #ccc !important;
+}
+@media print {
+    .hq_table {
+        border-collapse: collapse;
+        position: relative;
+    }
+    .hq_table th,
+    .hq_table td {
+        border: 1px solid #000 !important;
+        padding: 0;
+    }
+    .hq_table.tb_7pt th {
+        padding: 2px;
+        line-height: 1;
+        font-size: 7pt;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+    }
+    .hq_table.tb_7pt tbody td {
+        font-size: 6%;
+        font-size: 6pt;
+        line-height: 1.2;
+        vertical-align: middle;
+        text-decoration: inherit;
+        min-height: 36px;
+    }
+    .hq_table.tb_8pt th {
+        padding: 2px;
+        line-height: 1;
+        font-size: 8pt;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+    }
+    .hq_table.tb_8pt tbody td {
+        font-size: 7pt;
+        line-height: 1.2;
+        vertical-align: middle;
+        text-decoration: inherit;
+        min-height: 36px;
+    }
+    .hq_table.tb_9pt th {
+        padding: 2px;
+        line-height: 1;
+        font-size: 9pt;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+    }
+    .hq_table.tb_9pt tbody td {
+        font-size: 8pt;
+        line-height: 1.2;
+        vertical-align: middle;
+        text-decoration: inherit;
+        min-height: 36px;
+    }
+    .hq_table.tb_10pt th {
+        padding: 2px;
+        line-height: 1;
+        font-size: 10pt;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+    }
+    .hq_table.tb_10pt tbody td {
+        font-size: 9pt;
+        line-height: 1.2;
+        vertical-align: middle;
+        text-decoration: inherit;
+        min-height: 36px;
+    }
+
+    .hq_table.tb_11pt th {
+        padding: 2px;
+        line-height: 1;
+        font-size: 11pt;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    .hq_table.tb_11pt tbody td {
+        font-size: 10pt;
+        line-height: 1.2;
+        vertical-align: middle;
+        text-decoration: inherit;
+        min-height: 36px;
+    }
+
+    .hq_table input::placeholder,
+    textarea::placeholder {
+        color: transparent !important;
+    }
+    .footer-print {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        font-size: 9pt;
+        text-align: left;
+        margin-left: 5px;
+        z-index: 1000;
+    }
+}
+.input-fileUpload {
+    clip: 'rect(0 0 0 0)';
+    clip-path: 'inset(50%)';
+    height: 1;
+    overflow: 'hidden';
+    position: 'absolute';
+    bottom: 0;
+    left: 0;
+    white-space: 'nowrap';
+    width: 1;
+}
+
+.table-custom {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-custom th,
+.table-custom td {
+    text-align: center;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.table-custom th {
+    position: sticky; /* Giữ vị trí cố định */
+    top: 0;
+    background-color: #eef0f2; /* Màu nền cho header */
+    border: 1px solid #ccc;
+    z-index: 2; /* Đặt z-index cao hơn td để tránh bị che */
+}
+
+.table-custom td {
+    border: 1px solid #ccc; /* Đặt viền cho td */
+    border-right: none;
+    border-top: none;
+}
+.row-tonghop {
+    display: flex;
+    width: 100%;
+}
+.table-tonghop {
+    width: 100%;
+    margin-top: 10px;
+    /* border: 1px solid #ccc; */
+}
+.col-12-th {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+.col-12-th:last-child {
+    border-right: 1px solid #ccc;
+}
+
+.thead-tonghop {
+    width: 100%;
+    display: flex;
+}
+.tbody-tonghop {
+    width: 100%;
+    border-left: 1px solid #ccc;
+}
+.col-12-td {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    display: inline-block; /* Không cần dấu nháy */
+    white-space: nowrap; /* Đảm bảo văn bản không xuống dòng */
+    overflow: hidden; /* Ẩn phần văn bản tràn ra ngoài */
+    text-overflow: ellipsis; /* Hiển thị dấu ... */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    text-align: center; /* Căn giữa văn bản */
+    border-bottom: 1px solid #ccc; /* Đường viền dưới */
+    font-size: 11px; /* Kích thước chữ */
+    border-right: 1px solid #ccc; /* Đường viền phải */
+}
+
+.col-12-td:last-child {
+    border-right: 1px solid #ccc;
+}
+
+.resizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    cursor: col-resize;
+    user-select: none;
+}
+.resizer:hover,
+.resizing {
+    border-right: 1px solid black;
+}
+/* styling signal */
+.is-styling {
+    background: #e8efff !important;
+}
+.is-styling-col {
+    background: #e8efff !important;
+}
+/* resize able */
+.resizable {
+    border: 1px solid gray;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.styling-option:hover {
+    background: #ccc;
+}
+/* Style options */
+.hq_table .hq-cell-bold {
+    font-weight: bold !important;
+}
+.hq_table .hq-cell-italic {
+    font-style: italic !important;
+}
+.hq_table .hq-cell-underline {
+    text-decoration: underline !important;
+}
+.hq_table .hq-cell-center {
+    text-align: center !important;
+}
+.hq_table .hq-table-input {
+    outline: none !important;
+}
+/* Author by quandepzai */
+/* icon dotloadding */
+.dots-loading {
+    display: inline-block;
+}
+
+.dots-loading span {
+    display: inline-block;
+    animation: blink 1.4s infinite both;
+}
+
+.dots-loading span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dots-loading span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

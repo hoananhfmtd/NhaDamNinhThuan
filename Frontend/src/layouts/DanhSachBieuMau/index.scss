@@ -1,0 +1,136 @@
+.form-list__container-special {
+    // max-height: calc(100vh - 80px);
+    height: 100vh;
+    overflow: overlay;
+    padding: 0 10px;
+    user-select: none;
+    background-color: white;
+
+    &--box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // top: 0;
+        z-index: 555;
+        // position: sticky;
+        background-color: #fff;
+    }
+
+    &--empty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #fff;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #eee;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #ccc;
+    }
+
+    .base-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 1500px) {
+        .base-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .base-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .base-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .base-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+.form-list__container {
+    max-height: calc(100vh - 80px);
+    overflow: overlay;
+    padding: 0 10px;
+    user-select: none;
+    background-color: white;
+
+    &--box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // top: 0;
+        z-index: 555;
+        // position: sticky;
+        background-color: #fff;
+    }
+
+    &--empty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #fff;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #eee;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #ccc;
+    }
+
+    .base-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 1500px) {
+        .base-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .base-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .base-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .base-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

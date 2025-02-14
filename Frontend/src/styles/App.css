@@ -1,0 +1,24 @@
+:root {
+    background-color: #f2f4f6;
+}
+
+body {
+}
+p {
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    cursor: pointer;
+}
+legend {
+    width: 0;
+}
+.text-chitiet {
+    cursor: pointer;
+    color: #057db2;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
