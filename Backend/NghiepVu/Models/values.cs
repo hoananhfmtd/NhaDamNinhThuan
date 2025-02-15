@@ -716,76 +716,6 @@ public class Utils
     }
 }
 
-
-public partial class DmKtt
-{
-    public int Id { set; get; }
-    public short? Cap { get; set; }
-    public string? Matinh { get; set; } = "";
-    public string? Tendvhc { get; set; } = "";
-    public int Do { get; set; } // int?
-    public int Phut { get; set; } // int?
-    public short? Daxoa { get; set; }
-    public string? Ten { get; set; } = "";
-    public int Srid { get; set; }
-}
-
-public partial class Spatial
-{
-    [JsonPropertyName("madinhdanh")]
-    [Key] public string madinhdanh { get; set; }
-    public long Created { get; set; }
-    [JsonPropertyName("ktt")]
-    [NotMapped]
-    public string ktt { get; set; }
-    [JsonPropertyName("muichieu")]
-    [NotMapped]
-    public int muichieu { get; set; }
-    [JsonPropertyName("geojson")]
-    [NotMapped]
-    public string geojson { get; set; }
-    [JsonPropertyName("matinh")]
-    [NotMapped]
-    public string? matinh { get; set; }
-    [JsonPropertyName("mahuyen")]
-    [NotMapped]
-    public string? maHuyen { get; set; }
-    [JsonPropertyName("maxa")]
-    [NotMapped]
-    public string? maxa { get; set; }
-    [JsonPropertyName("diachi")]
-    [NotMapped]
-    public string diachi { get; set; }
-    [JsonPropertyName("typegeom")]
-    [NotMapped]
-    public int typegeom { get; set; }
-    [JsonPropertyName("vn2000")]
-    [NotMapped]
-    public string vn2000 { get; set; }
-    [JsonPropertyName("arrpoint")]
-    [NotMapped]
-    public int[] arrpoint { get; set; }
-    [JsonPropertyName("loai")]
-    [NotMapped]
-    public string loai { get; set; }
-    [JsonPropertyName("ten")]
-    [NotMapped]
-    public string? ten { get; set; }
-    [JsonPropertyName("bieu_mau")]
-    [NotMapped]
-    public string? bieuMau { get; set; }
-    [JsonPropertyName("bieu_mau_id")]
-    [NotMapped]
-    public int bieuMauId { get; set; }
-    public string? doituongId { get; set; }
-    [JsonPropertyName("x")]
-    [NotMapped]
-    public double? x { get; set; }
-    [JsonPropertyName("y")]
-    [NotMapped]
-    public double? y { get; set; }
-}
-
 // TODO merge to Util
 public static class NghiepVuConfig
 {
@@ -793,58 +723,58 @@ public static class NghiepVuConfig
     public static string? SpatialUrl { get; set; }
     public static WebApplication app { get; set; }
 
-    private static void ToadoToSpatial(Spatial spatial, double? vn2000x, double? vn2000y, HeQuyChieu? heQuyChieu, string? wgS84)
-    {
-        if (vn2000x.HasValue && vn2000y.HasValue)
-        {
-            var vn2000 = $"POINT({vn2000y} {vn2000x})"; // ? why
+    //private static void ToadoToSpatial(Spatial spatial, double? vn2000x, double? vn2000y, HeQuyChieu? heQuyChieu, string? wgS84)
+    //{
+    //    if (vn2000x.HasValue && vn2000y.HasValue)
+    //    {
+    //        var vn2000 = $"POINT({vn2000y} {vn2000x})"; // ? why
 
-            // spatial.vn2000 = vn2000;
-            spatial.geojson = vn2000;
+    //        // spatial.vn2000 = vn2000;
+    //        spatial.geojson = vn2000;
 
-            // TODO remove
-            spatial.x = vn2000x;
-            spatial.y = vn2000y;
+    //        // TODO remove
+    //        spatial.x = vn2000x;
+    //        spatial.y = vn2000y;
 
-            if (heQuyChieu != null && heQuyChieu.KTTDo > 0 && heQuyChieu.KTTPhut > 0)
-            {
-                spatial.ktt = $"{heQuyChieu.KTTDo}_{heQuyChieu.KTTPhut}";
-                spatial.muichieu = heQuyChieu.MuiChieu;
-            }
+    //        if (heQuyChieu != null && heQuyChieu.KTTDo > 0 && heQuyChieu.KTTPhut > 0)
+    //        {
+    //            spatial.ktt = $"{heQuyChieu.KTTDo}_{heQuyChieu.KTTPhut}";
+    //            spatial.muichieu = heQuyChieu.MuiChieu;
+    //        }
 
-            // TODO need more test
-            // TODO default is not assign, and move this logic to spatial
-            spatial.ktt ??= "";
+    //        // TODO need more test
+    //        // TODO default is not assign, and move this logic to spatial
+    //        spatial.ktt ??= "";
 
-            //if (spatial.ktt is null or "")
-            //{
-            //    spatial.ktt = "105_00";
-            //    spatial.muichieu = 6;
-            //}
+    //        //if (spatial.ktt is null or "")
+    //        //{
+    //        //    spatial.ktt = "105_00";
+    //        //    spatial.muichieu = 6;
+    //        //}
 
-            //if (spatial.ktt != "105_00" && spatial.muichieu == 0)
-            //{
-            //    spatial.muichieu = 3;
-            //}
+    //        //if (spatial.ktt != "105_00" && spatial.muichieu == 0)
+    //        //{
+    //        //    spatial.muichieu = 3;
+    //        //}
 
-            //if (spatial.ktt == "105_00" && spatial.muichieu == 0)
-            //{
-            //    spatial.muichieu = 6;
-            //}
+    //        //if (spatial.ktt == "105_00" && spatial.muichieu == 0)
+    //        //{
+    //        //    spatial.muichieu = 6;
+    //        //}
 
-            return;
-        }
+    //        return;
+    //    }
 
-        if (wgS84 == null)
-        {
-            return;
-        }
+    //    if (wgS84 == null)
+    //    {
+    //        return;
+    //    }
 
-        // TODO assign x=lat, y=lng
+    //    // TODO assign x=lat, y=lng
 
-        spatial.ktt = "4326";
-        spatial.geojson = wgS84;
-    }
+    //    spatial.ktt = "4326";
+    //    spatial.geojson = wgS84;
+    //}
 
     public static async Task RemoveSpatial(List<string> ids)
     {

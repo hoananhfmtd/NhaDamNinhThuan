@@ -95,7 +95,7 @@ app.MapControllers();
 
 //SetupScript.LoadDvhcXas();
 //Console.WriteLine(DanhMucs.DvhcVNDB.Indexmap["tinhthanhs"].Length);
-SetupScript.LoadKTT();
+//SetupScript.LoadKTT();
 NghiepVuConfig.SpatialUrl = builder.Configuration.GetSection("spatial_url").Value;
 NghiepVuConfig.ApiName = builder.Configuration.GetSection("ApiName").Value;
 NghiepVuConfig.app = app;

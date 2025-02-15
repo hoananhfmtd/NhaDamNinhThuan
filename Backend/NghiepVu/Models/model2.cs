@@ -24,18 +24,6 @@ public partial class MediaFile
     public long fileSize { get; set; }
 }
 
-public partial class HeQuyChieu
-{
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int KTTDo { get; set; }
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int KTTPhut { get; set; }
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int KTTGiay { get; set; }
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int MuiChieu { get; set; } // 6 for 105_00(default), 3
-}
-
 #region taikhoannguoidung
 public partial class NguoiDung
 {

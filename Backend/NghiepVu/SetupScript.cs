@@ -10,35 +10,6 @@ using Microsoft.EntityFrameworkCore;
 public class SetupScript
 {
 
-    public static void LoadKTT()
-    {
-        using (StreamReader r = new("spatial-init.json"))
-        {
-            var json = r.ReadToEnd();
-            var obj = JObject.Parse(json);
-            if (obj == null)
-            {
-                Console.WriteLine("obj nullllllllllllllllllll");
-                return;
-            }
-            if (obj["dm_ktt"] == null)
-            {
-                Console.WriteLine("obj[\"dm_ktt\"] nullllllllllllllllllll");
-                return;
-            }
-
-            var ktts = JsonConvert.DeserializeObject<List<DmKtt>>(obj["dm_ktt"].ToString());
-            if (ktts == null || ktts.Count == 0)
-            {
-                Console.WriteLine("ktts nullllllllllllllllllll");
-                return;
-            }
-
-        }
-    }
-
-
-
     public static string RemovePrefixs(string text, string[] prefixs)
     {
         text = text.Trim();
