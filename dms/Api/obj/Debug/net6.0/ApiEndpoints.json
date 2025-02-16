@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "DMS.Api.Controllers.DeleteController",
+    "Method": "Delete",
+    "RelativePath": "api/dms/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileDownload",
+        "Type": "DMS.Api.Models.FileDownload",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Api.Controllers.DownloadController",
+    "Method": "Download",
+    "RelativePath": "api/dms/Download",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileDownload",
+        "Type": "DMS.Api.Models.FileDownload",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Api.Controllers.UploadController",
+    "Method": "UploadFile",
+    "RelativePath": "api/dms/Upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

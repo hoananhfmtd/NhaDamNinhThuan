@@ -1,0 +1,6 @@
+version: '3.4'
+
+services:
+  moitruong-haiphong-dms-api:
+    build: .
+    image: anhmd/moitruonghaiphongdmsapi:moitruong-pro
