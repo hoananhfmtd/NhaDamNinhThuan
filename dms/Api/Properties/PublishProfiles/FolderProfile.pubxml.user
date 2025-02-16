@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\THONGNT\Jobs\Projects\2019\6.CSOSFW\4.prj\15.dbscl.tda1.gstnn\dms\Api\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2022-06-29T11:19:57.3432651Z;True|2021-10-25T17:18:22.7048411+07:00;True|2021-09-18T09:36:48.0304408+07:00;True|2021-08-06T10:47:52.9160636+07:00;True|2021-04-13T14:50:16.0942386+07:00;True|2021-04-13T14:02:12.3776464+07:00;True|2021-04-12T15:08:34.9410012+07:00;</History>
+  </PropertyGroup>
+</Project>
