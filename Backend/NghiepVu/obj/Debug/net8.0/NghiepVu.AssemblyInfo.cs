@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NghiepVu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a21e48db48d8fee9e672e4aefc6ea275bf92f3b")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36f58dd9b8d3ec97079c67587e76d2a96bc95b73")]
+>>>>>>> dev
 [assembly: System.Reflection.AssemblyProductAttribute("NghiepVu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NghiepVu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

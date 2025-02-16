@@ -24,18 +24,6 @@ public partial class MediaFile
     public long fileSize { get; set; }
 }
 
-public partial class HeQuyChieu
-{
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int KTTDo { get; set; }
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int KTTPhut { get; set; }
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int KTTGiay { get; set; }
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int MuiChieu { get; set; } // 6 for 105_00(default), 3
-}
-
 #region taikhoannguoidung
 public partial class NguoiDung
 {
@@ -206,80 +194,6 @@ public partial class ThietBiDangNhap
     public string? ClientId { get; set; }
     public bool? Active { get; set; }
 
-}
-
-public class LuongNuocMatView
-{
-    public string? TinhThanhId { get; set; }
-    public string? TinhThanh { get; set; }
-    public string? CoQuanThucHienId { get; set; }
-    public string? CoQuanThucHien { get; set; }
-    public string? NguoiLapBieu { get; set; }
-    [JsonConverter(typeof(StringToLongConverter))]
-    public long NgayLapBieu { get; set; }
-    [JsonConverter(typeof(StringToLongConverter))]
-    public long NgayLapBieuHour { get; set; }
-    public string? NguoiKiemTra { get; set; }
-    public string? NoiLapBieu { get; set; }
-    public string? LuuVucSong { get; set; }
-    public string? LuuVucSongId { get; set; }
-    [JsonConverter(typeof(StringToDoubleConverter))]
-    public double? LuongNuoc { get; set; }
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int Id { get; set; }
-    public string? TenBieuMau { get; set; }
-}
-
-public class ThongKeSoLuongBieuMau(string? tenbieumau, int? soluong)
-{
-    public string? TenBieuMau { get; set; } = tenbieumau;
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int? SoLuong { get; set; } = soluong;
-    [JsonConverter(typeof(StringToLongConverter))]
-    public long? NgayThang { get; set; }
-}
-
-public class SoLuongBieuMau
-{
-    [JsonConverter(typeof(StringToIntConverter))]
-    public int? SoLuong { get; set; }
-    [JsonConverter(typeof(StringToLongConverter))]
-    public long? NgayThang { get; set; }
-    public string? NguoiTao { get; set; }
-    public DateTime NgayThangDate { get; set; }
-}
-
-public class ReportDashBoardByDoiTuong
-{
-    public int SoLuongSongSuoiKenhRach { get; set; }
-    public int SoLuongAoHoDamPha { get; set; }
-    public double? SoDiemChatLuongNuocMat { get; set; }
-    public int SoLuongCongTrinhKTSDNuocDD { get; set; }
-    public double LuongNuocKTSDNuocDD { get; set; }
-    public int SoLuongNguonNuocDD { get; set; }
-    public double? TruLuongTiemNangNuocDD { get; set; }
-    public double? TruLuongCoTheKhaiThacNuocDD { get; set; }
-    public int SoLuongCongTrinhKTSDNuocBien { get; set; }
-    public double? LuongNuocKTSDNuocBien { get; set; }
-    public double? TongLuongDongChay { get; set; }
-    public double? TongLuongDongChayVaoBienGioi { get; set; }
-    public double? TongLuongDongChayRaBienGioi { get; set; }
-    public double? LuongNuocChuyenGiuaCacLVS { get; set; }
-    public double? TongDungTichCacHoChua { get; set; }
-    public double? DienTichPhanBoNuocNgot { get; set; }
-    public double? DienTichPhanBoNuocMan { get; set; }
-    public int SoLuongCongTrinhXaThai { get; set; }
-    public double? LuongNuocKTSDXaThai { get; set; }
-    public double? TongLuongMuaCaNam { get; set; }
-    public int SoLuongCongTrinhKTSDNuocMat { get; set; }
-    public double LuongNuocKTSDNuocMat { get; set; }
-}
-
-public class QueryReportDashBoardByDoiTuong
-{
-    public string? Scope { get; set; }
-    public List<string>? CoQuanThucHienIds { get; set; }
-    public List<string>? TinhThanhIds { get; set; }
 }
 
 public class EndUserBug

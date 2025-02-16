@@ -93,9 +93,9 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
-SetupScript.LoadDvhcXas();
-Console.WriteLine(DanhMucs.DvhcVNDB.Indexmap["tinhthanhs"].Length);
-SetupScript.LoadKTT();
+//SetupScript.LoadDvhcXas();
+//Console.WriteLine(DanhMucs.DvhcVNDB.Indexmap["tinhthanhs"].Length);
+//SetupScript.LoadKTT();
 NghiepVuConfig.SpatialUrl = builder.Configuration.GetSection("spatial_url").Value;
 NghiepVuConfig.ApiName = builder.Configuration.GetSection("ApiName").Value;
 NghiepVuConfig.app = app;
@@ -113,11 +113,11 @@ using (var scope = app.Services.CreateScope())
     // SetupScript.CreateAccount(context, userManager, roleManager);
 }
 
-string s0 = null;
-Console.WriteLine($"RUN 23/08 {s0 is "notnull"}");
+//string s0 = null;
+//Console.WriteLine($"RUN 23/08 {s0 is "notnull"}");
 
-Console.WriteLine($"3.375 = {Utils.ExtractNumber("3.375")}");
+//Console.WriteLine($"3.375 = {Utils.ExtractNumber("3.375")}");
 
-Console.WriteLine($"{Utils.ToID("Căn")} {Utils.ToID("Cân")}");
+//Console.WriteLine($"{Utils.ToID("Căn")} {Utils.ToID("Cân")}");
 
 app.Run();

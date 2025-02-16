@@ -32,9 +32,9 @@ public class AccountController : ControllerBase
         this.httpContextAccessor = kkhttpContextAccessor;
     }
 
-    #region POST api/nghiepvukk/accounts-register deprecated
-    [HttpPost("api/nghiepvukk/accounts-register")]
-    [HttpPost("api/nghiepvukk/users/register")]
+    #region POST api/truyxuat/accounts-register deprecated
+    [HttpPost("api/truyxuat/accounts-register")]
+    [HttpPost("api/truyxuat/users/register")]
     public async Task<IActionResult> Register(NguoiDung nguoidung)
     {
         if (nguoidung.UserName == null || nguoidung.Password == null)
@@ -72,9 +72,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/accounts-register-by-email
-    [HttpPost("api/nghiepvukk/accounts-register-by-email")]
-    [HttpPost("api/nghiepvukk/users/registeremail")]
+    #region POST api/truyxuat/accounts-register-by-email
+    [HttpPost("api/truyxuat/accounts-register-by-email")]
+    [HttpPost("api/truyxuat/users/registeremail")]
     [AllowAnonymous]
     public async Task<IActionResult> RegisterByEmail(NguoiDung nguoidung)
     {
@@ -113,9 +113,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/accounts-logout
-    [HttpPost("api/nghiepvukk/accounts-logout")]
-    [HttpPost("api/nghiepvukk/users/logout/")]
+    #region POST api/truyxuat/accounts-logout
+    [HttpPost("api/truyxuat/accounts-logout")]
+    [HttpPost("api/truyxuat/users/logout/")]
     public async Task<IActionResult> Logout(ThietBis? danhsach)
     {
         var username = this.httpContextAccessor?.HttpContext?.User?.Identity?.Name;
@@ -176,9 +176,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/accounts-login
-    [HttpPost("api/nghiepvukk/accounts-login")]
-    [HttpPost("api/nghiepvukk/users/login")]
+    #region POST api/truyxuat/accounts-login
+    [HttpPost("api/truyxuat/accounts-login")]
+    [HttpPost("api/truyxuat/users/login")]
     [AllowAnonymous]
     public async Task<IActionResult> Login(ThongTinDangNhap nguoidung)
     {
@@ -261,11 +261,11 @@ public class AccountController : ControllerBase
                         Role = role,
                         user.Scope,
                         user.FullName,
-                        user.TinhThanhId,
-                        TinhThanh = NghiepVuConfig.TinhThanh(user.TinhThanhId),
+                        //user.TinhThanhId,
+                        //TinhThanh = NghiepVuConfig.TinhThanh(user.TinhThanhId),
                         TypeOfUsers = user.TypeOfUser,
-                        user.CoQuanThucHienId,
-                        CoQuanThucHien = Utils.GetCoQuanThucHien(user.CoQuanThucHienId),
+                        //user.CoQuanThucHienId,
+                        //CoQuanThucHien = Utils.GetCoQuanThucHien(user.CoQuanThucHienId),
                     });
                 }
                 else
@@ -279,9 +279,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/accounts-reset-password
-    [HttpPost("api/nghiepvukk/accounts-reset-password")]
-    [HttpPost("api/nghiepvukk/users/resetmatkhau")]
+    #region POST api/truyxuat/accounts-reset-password
+    [HttpPost("api/truyxuat/accounts-reset-password")]
+    [HttpPost("api/truyxuat/users/resetmatkhau")]
     [AllowAnonymous]
     public async Task<IActionResult> ResetMatKhau(ReSetPass reSetPass)
     {
@@ -344,9 +344,9 @@ public class AccountController : ControllerBase
     #endregion
 
 
-    #region GET api/nghiepvukk/me
-    [HttpGet("api/nghiepvukk/me")]
-    [HttpGet("api/nghiepvukk/users/me")]
+    #region GET api/truyxuat/me
+    [HttpGet("api/truyxuat/me")]
+    [HttpGet("api/truyxuat/users/me")]
     public IActionResult GetMe()
     {
         var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
@@ -362,9 +362,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region GET api/nghiepvukk/users/{username}/list-devices deprecated
-    [HttpGet("api/nghiepvukk/users/{username}/list-devices")]
-    [HttpGet("api/nghiepvukk/users/getdsdangnhap/{username}")]
+    #region GET api/truyxuat/users/{username}/list-devices deprecated
+    [HttpGet("api/truyxuat/users/{username}/list-devices")]
+    [HttpGet("api/truyxuat/users/getdsdangnhap/{username}")]
     public async Task<IActionResult> GetDanhSachDangNhap(string username)
     {
         var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
@@ -397,8 +397,8 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region GET api/nghiepvukk/me-list-devices
-    [HttpGet("api/nghiepvukk/me-list-devices")]
+    #region GET api/truyxuat/me-list-devices
+    [HttpGet("api/truyxuat/me-list-devices")]
     public async Task<IActionResult> GetDevices()
     {
         var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
@@ -432,9 +432,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/me-updateinfo
-    [HttpPost("api/nghiepvukk/me-updateinfo")]
-    [HttpPost("api/nghiepvukk/users/updateinfo")]
+    #region POST api/truyxuat/me-updateinfo
+    [HttpPost("api/truyxuat/me-updateinfo")]
+    [HttpPost("api/truyxuat/users/updateinfo")]
     public async Task<IActionResult> UpdateInfo(NguoiDungInfo nguoidung)
     {
         var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
@@ -468,9 +468,9 @@ public class AccountController : ControllerBase
     #endregion
 
 
-    #region POST api/nghiepvukk/users-create
-    [HttpPost("api/nghiepvukk/users-create")]
-    [HttpPost("api/nghiepvukk/users/createaccount")]
+    #region POST api/truyxuat/users-create
+    [HttpPost("api/truyxuat/users-create")]
+    [HttpPost("api/truyxuat/users/createaccount")]
     public async Task<IActionResult> CreateAccount(NguoiDung nguoidung)
     {
         var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
@@ -555,9 +555,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region GET api/nghiepvukk/users/{id}
-    [HttpGet("api/nghiepvukk/users/{id}")]
-    [HttpGet("api/nghiepvukk/users/getbyid/{id}")]
+    #region GET api/truyxuat/users/{id}
+    [HttpGet("api/truyxuat/users/{id}")]
+    [HttpGet("api/truyxuat/users/getbyid/{id}")]
     public async Task<IActionResult> GetById(string id)
     {
         var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
@@ -603,9 +603,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/users-delete/{id}
-    [HttpPost("api/nghiepvukk/users-delete/{id}")]
-    [HttpDelete("api/nghiepvukk/users/delete/{id}")]
+    #region POST api/truyxuat/users-delete/{id}
+    [HttpPost("api/truyxuat/users-delete/{id}")]
+    [HttpDelete("api/truyxuat/users/delete/{id}")]
     public async Task<IActionResult> Delete(string id)
     {
         if (id is null or "")
@@ -646,9 +646,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/users-update
-    [HttpPost("api/nghiepvukk/users-update")]
-    [HttpPost("api/nghiepvukk/users/update")]
+    #region POST api/truyxuat/users-update
+    [HttpPost("api/truyxuat/users-update")]
+    [HttpPost("api/truyxuat/users/update")]
     public async Task<IActionResult> Update(NguoiDung nguoidung)
     {
         if (nguoidung.Id == null)
@@ -765,9 +765,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/users-update-password
-    [HttpPost("api/nghiepvukk/users-update-password")]
-    [HttpPost("api/nghiepvukk/users/doimatkhau")]
+    #region POST api/truyxuat/users-update-password
+    [HttpPost("api/truyxuat/users-update-password")]
+    [HttpPost("api/truyxuat/users/doimatkhau")]
     public async Task<IActionResult> DoiMatKhau(DoiPass doiPass)
     {
         if (doiPass.OldPass is null)
@@ -808,8 +808,8 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/users/createtoken/{username}
-    [HttpPost("api/nghiepvukk/users/createtoken/{username}")]
+    #region POST api/truyxuat/users/createtoken/{username}
+    [HttpPost("api/truyxuat/users/createtoken/{username}")]
     public async Task<IActionResult> CreateTokenByUser(string username)
     {
         var anyuser = Utils.ReadAnyUser(this.httpContextAccessor, this.userManager, this.HttpContext);
@@ -885,9 +885,9 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region POST api/nghiepvukk/users-list
-    [HttpPost("api/nghiepvukk/users-list")]
-    [HttpPost("api/nghiepvukk/users/list")]
+    #region POST api/truyxuat/users-list
+    [HttpPost("api/truyxuat/users-list")]
+    [HttpPost("api/truyxuat/users/list")]
     public IActionResult GetAll(NguoiDungRequest req)
     {
         var qr = (from users in this.context.Users
@@ -1054,8 +1054,8 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region GET api/nghiepvukk/users/getgiamsatbyscope/{scope} users-list
-    [HttpGet("api/nghiepvukk/users/getgiamsatbyscope/{scope}")]
+    #region GET api/truyxuat/users/getgiamsatbyscope/{scope} users-list
+    [HttpGet("api/truyxuat/users/getgiamsatbyscope/{scope}")]
     public IActionResult GetGiamSatByScope(string scope)
     {
         var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
@@ -1078,8 +1078,8 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region GET api/nghiepvukk/users/getuserbyscope/{scope} users-list
-    [HttpGet("api/nghiepvukk/users/getuserbyscope/{scope}")]
+    #region GET api/truyxuat/users/getuserbyscope/{scope} users-list
+    [HttpGet("api/truyxuat/users/getuserbyscope/{scope}")]
     public IActionResult GetUserByScope(string scope)
     {
         var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
@@ -1102,89 +1102,5 @@ public class AccountController : ControllerBase
     }
     #endregion
 
-    #region GET api/nghiepvukk/users/getbytinhthanhid/{tinhid} users-list
-    [HttpGet("api/nghiepvukk/users/getbytinhthanhid/{tinhid}")]
-    public IActionResult GetUserByTinhId(string tinhid)
-    {
-        if (tinhid == null)
-        {
-            return this.Unauthorized();
-        }
-        var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
-        if (issuer == null)
-        {
-            return this.Unauthorized();
-        }
-        if (issuer.Error is not null and not "")
-        {
-            return this.StatusCode(400, issuer.Error);
-        }
-
-        var result = this.userManager.GetUsersInRoleAsync(Consts.UserRoles.User).Result.ToList();
-        result = result.Where(x => x.TinhThanhId == tinhid && x.Supervisor == null && x.DaXoa == 0).ToList();
-        return this.Ok(result);
-    }
-    #endregion
-
-    #region GET api/nghiepvukk/users/getbycoquanthuchienid/{coquanid} users-list
-    [HttpGet("api/nghiepvukk/users/getbycoquanthuchienid/{coquanid}")]
-    public IActionResult GetUserByCoQuanThucHienId(string coquanid)
-    {
-        if (coquanid == null)
-        {
-            return this.Unauthorized();
-        }
-        var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
-        if (issuer == null)
-        {
-            return this.Unauthorized();
-        }
-        if (issuer.Error is not null and not "")
-        {
-            return this.StatusCode(400, issuer.Error);
-        }
-        var result = this.userManager.GetUsersInRoleAsync(Consts.UserRoles.User).Result.ToList();
-        result = result.Where(x => x.CoQuanThucHienId == coquanid && x.Supervisor == null && x.DaXoa == 0).ToList();
-        return this.Ok(result);
-    }
-    #endregion
-
-    #region GET api/nghiepvukk/users/getgiamsatbytinhthanhid/{tinhid} users-list
-    [HttpGet("api/nghiepvukk/users/getgiamsatbytinhthanhid/{tinhid}")]
-    public IActionResult GetGiamSatByTinhId(string tinhid)
-    {
-        if (tinhid == null)
-        {
-            return this.Ok(null);
-        }
-
-        var result = this.userManager.GetUsersInRoleAsync(Consts.UserRoles.GiamSat).Result.ToList();
-        result = result.Where(x => x.TinhThanhId == tinhid && x.DaXoa == 0).ToList();
-        return this.Ok(result);
-    }
-    #endregion
-
-    #region GET api/nghiepvukk/users/getgiamsatbycoquanthuchienid/{coquanid} users-list
-    [HttpGet("api/nghiepvukk/users/getgiamsatbycoquanthuchienid/{coquanid}")]
-    public IActionResult GetGiamSatByCoQuanThucHienId(string coquanid)
-    {
-        if (coquanid == null)
-        {
-            return this.Ok(null);
-        }
-        var issuer = Utils.ReadUser(this.httpContextAccessor, this.userManager);
-        if (issuer == null)
-        {
-            return this.Unauthorized();
-        }
-        if (issuer.Error is not null and not "")
-        {
-            return this.StatusCode(400, issuer.Error);
-        }
-        var result = this.userManager.GetUsersInRoleAsync(Consts.UserRoles.GiamSat).Result.ToList();
-        result = result.Where(x => x.CoQuanThucHienId == coquanid && x.DaXoa == 0).ToList();
-        return this.Ok(result);
-    }
-    #endregion
 
 }
