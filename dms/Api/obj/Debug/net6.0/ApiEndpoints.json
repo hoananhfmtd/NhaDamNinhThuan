@@ -32,6 +32,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DMS.Api.Controllers.DownloadController",
+    "Method": "UrlImage",
+    "RelativePath": "api/dms/Download/url-image",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bucketName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "objectName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "expirationTime",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DMS.Api.Controllers.UploadController",
     "Method": "UploadFile",
     "RelativePath": "api/dms/Upload",

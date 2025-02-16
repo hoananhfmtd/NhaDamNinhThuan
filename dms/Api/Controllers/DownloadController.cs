@@ -14,8 +14,8 @@ namespace DMS.Api.Controllers
 {
     [Route("api/dms/[controller]")]
     [ApiController]
-    [Authorize]
-    //[AllowAnonymous]
+    //[Authorize]
+    [AllowAnonymous]
     public class DownloadController : ControllerBase
     {
         private readonly string _connStr;
@@ -108,6 +108,23 @@ namespace DMS.Api.Controllers
                 {".ppt", "application/vnd.ms-powerpoint"},
                  {".pptx", "application/vnd.openxmlformats-officedocument.presentationml.presentation"}
             };
+        }
+
+        [HttpGet]
+        [Route("url-image")]
+        public async Task<IActionResult> UrlImage(string bucketName, string objectName, int expirationTime)
+        {
+            var reqParams = new Dictionary<string, string>(StringComparer.Ordinal)
+        { { "response-content-type", "image/jpeg" } };
+
+            PresignedGetObjectArgs args = new PresignedGetObjectArgs()
+                .WithBucket(bucketName)
+                .WithObject(objectName)
+                .WithHeaders(reqParams)
+                .WithExpiry(expirationTime);
+
+            string url = await _minioClient.PresignedGetObjectAsync(args);
+            return Ok(url);
         }
     }
 }
