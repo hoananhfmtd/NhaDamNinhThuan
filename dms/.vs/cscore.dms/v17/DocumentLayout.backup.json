@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\PROJECT\\PROJECT_2025\\NhaDamNinhThuan\\code\\dms\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A6E10717-1B8B-40EA-B497-50EC91F73B15}|Api\\DMS.Api.csproj|d:\\project\\project_2025\\nhadamninhthuan\\code\\dms\\api\\controllers\\downloadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E10717-1B8B-40EA-B497-50EC91F73B15}|Api\\DMS.Api.csproj|solutionrelative:api\\controllers\\downloadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A6E10717-1B8B-40EA-B497-50EC91F73B15}|Api\\DMS.Api.csproj|d:\\project\\project_2025\\nhadamninhthuan\\code\\dms\\api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6E10717-1B8B-40EA-B497-50EC91F73B15}|Api\\DMS.Api.csproj|solutionrelative:api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,19 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DownloadController.cs",
+              "DocumentMoniker": "D:\\PROJECT\\PROJECT_2025\\NhaDamNinhThuan\\code\\dms\\Api\\Controllers\\DownloadController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\DownloadController.cs",
+              "ToolTip": "D:\\PROJECT\\PROJECT_2025\\NhaDamNinhThuan\\code\\dms\\Api\\Controllers\\DownloadController.cs",
+              "RelativeToolTip": "Api\\Controllers\\DownloadController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAmwHEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T15:58:14.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UploadController.cs",
               "DocumentMoniker": "D:\\PROJECT\\PROJECT_2025\\NhaDamNinhThuan\\code\\dms\\Api\\Controllers\\UploadController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\UploadController.cs",
               "ToolTip": "D:\\PROJECT\\PROJECT_2025\\NhaDamNinhThuan\\code\\dms\\Api\\Controllers\\UploadController.cs",
               "RelativeToolTip": "Api\\Controllers\\UploadController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T15:01:18.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\PROJECT\\PROJECT_2025\\NhaDamNinhThuan\\code\\dms\\Api\\appsettings.json",
               "RelativeDocumentMoniker": "Api\\appsettings.json",
@@ -55,12 +72,11 @@
               "RelativeToolTip": "Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-16T14:59:28.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T14:59:28.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings - Pro.json",
               "DocumentMoniker": "D:\\PROJECT\\PROJECT_2025\\NhaDamNinhThuan\\code\\dms\\Api\\appsettings - Pro.json",
               "RelativeDocumentMoniker": "Api\\appsettings - Pro.json",
@@ -68,8 +84,7 @@
               "RelativeToolTip": "Api\\appsettings - Pro.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-16T14:59:12.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T14:59:12.404Z"
             }
           ]
         }
